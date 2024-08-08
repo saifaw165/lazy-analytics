@@ -33,7 +33,7 @@ def binary_segments(analysis_df: pd.DataFrame, conditions: list[tuple[str, bool]
     return analysis_df
 
 
-def persona_nps_insight(segment_type: pd.DataFrame,persona: str,column:str) -> pd.DataFrame:
+def item_category_nps_insight(segment_type: pd.DataFrame,persona: str,column:str) -> pd.DataFrame:
     """
     return individual persona NPS aggregated for the month 
     """
@@ -42,7 +42,7 @@ def persona_nps_insight(segment_type: pd.DataFrame,persona: str,column:str) -> p
     return insights
     
 
-def persona_nps_insight_multiple(segment_type: pd.DataFrame,persona: list[str],column:str) -> pd.DataFrame:
+def item_category_nps_insight_multiple(segment_type: pd.DataFrame,persona: list[str],column:str) -> pd.DataFrame:
     """
     return multiple persona NPS aggregated for the month 
     """
